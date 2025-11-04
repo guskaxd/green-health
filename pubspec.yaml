@@ -1,0 +1,42 @@
+name: saude_verde
+description: "A new Flutter project."
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.2 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.13.5
+  cupertino_icons: ^1.0.6
+  shared_preferences: ^2.0.9
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter_icons:
+  android: true
+  ios: true
+
+  flutter_lints: ^3.0.0
+flutter:
+  assets:
+    - lib/assets/icons/app_splash.png
+    - lib/assets/icons/logo.jpg
+    - lib/assets/aroeira.png
+    - lib/assets/limoeiro.png
+    - lib/assets/goiabeira.png
+    - lib/assets/boldo.png
+    - lib/assets/alecrim.png
+    - lib/assets/cha_limao.png
+    - lib/assets/cha_hortela.png
+    - lib/assets/cha_camomila.png
+    - lib/assets/cha_gengibre.png
+    - lib/assets/cha_cidreira.png
+    - lib/assets/cha_canela.png
+
+  uses-material-design: true
