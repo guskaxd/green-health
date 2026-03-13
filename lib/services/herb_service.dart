@@ -1,11 +1,11 @@
-/*Api cloud render.com
+//Api cloud render.com
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class HerbService {
   // Função existente: buscar ervas pelo nome
   Future<List<dynamic>> searchHerbByName(String searchText) async {
-    var url = Uri.parse('https://api-saude-hyqy.onrender.com/herbs');
+    var url = Uri.parse('green-health-production.up.railway.app/herbs');
     var response = await http.get(url);
 
     if (response.statusCode == 200) {
@@ -26,7 +26,7 @@ class HerbService {
   // Nova função: buscar ervas pelo problema de saúde
   Future<List<dynamic>> searchHerbByProblem(String problem) async {
     var url = Uri.parse(
-        'https://api-saude-hyqy.onrender.com/herbs/search/$problem'); // URL para busca por problema
+        'green-health-production.up.railway.app/herbs/search/$problem'); // URL para busca por problema
     var response = await http.get(url);
 
     if (response.statusCode == 200) {
@@ -38,7 +38,7 @@ class HerbService {
     }
   }
 }
-*/
+/*
 //Para usar emulador android/ios
 import 'dart:convert';
 import 'package:http/http.dart' as http;
@@ -80,3 +80,4 @@ class HerbService {
     }
   }
 }
+*/
